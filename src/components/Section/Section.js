@@ -1,11 +1,10 @@
+import { Title, Container } from './Section.styled';
 
-import { Title, Container } from "./Section.styled";
-
-export function Section ({ title, children }) {
-return (
-<Container>
-    <Title>{title}</Title>
-{children}
-</Container>
-);
-}
+export const Section = ({ title, children }) => {
+  return (
+    <Container>
+      <Title>{title}</Title>
+      {children}
+    </Container>
+  );
+};
